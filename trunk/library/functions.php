@@ -76,4 +76,15 @@ function js_skin($name)
 	return $path;
 }
 
+/**
+ * @param string $src
+ */
+function img_skin($src, $alt = null)
+{
+	$path = skin_resource_path($src);
+	$path = sprintf('<img src="%s" alt="%s"></script>', $path, $alt);
+	return $path;
+}
+
+
 
