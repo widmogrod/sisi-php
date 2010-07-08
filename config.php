@@ -29,6 +29,13 @@ defined('SKIN_PATHNAME') or define('SKIN_PATHNAME', APP_PATHNAME . '/'. SKIN_PAT
 // Nazwa skórki galerii
 defined('SKIN_NAME') or define('SKIN_NAME', 'krakplast');
 
+/*
+	Strony
+*/
+
+defined('PAGE_PATH') or define('PAGE_PATH', 'pages');
+
+defined('PAGE_PATHNAME') or define('PAGE_PATHNAME', APP_PATHNAME . '/' . PAGE_PATH);
 
 /*
 	Galeria

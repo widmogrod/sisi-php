@@ -3,24 +3,39 @@
 <head>
 <?php
 	print partial('html_head');
+	
+	// FancyBox
+	print js_resource('js/jquery-1.4.2.min.js');
+	print js_resource('js/fancybox/jquery.mousewheel-3.0.2.pack.js');
+	print js_resource('js/fancybox/jquery.fancybox-1.3.1.js');
+	print css_resource('js/fancybox/jquery.fancybox-1.3.1.css');
 ?>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("a[rel=lightbox]").fancybox({
+			'transitionIn'		: 'none',
+			'transitionOut'		: 'none',
+			'titlePosition' 	: 'over',
+			'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
+				return '<span id="fancybox-title-over">Zdjęcie produktu ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+			}
+		});
+	});
+</script>
 </head>
 <body class="index">
 <div class="container_16 clearfix">
 
 	<?php
 		print partial('body_head');
-		var_dump($this->getMessages());
 		
 		$data = $this->getData();
 		
 		$categories = $data['categories'];
 		$category = $data['category'];
 		$products = $category['products'];
+		$activeId = $data['activeId'];
 	?>
-	<pre>
-	<?php //print_r($data);?>
-	</pre>
 
 	<div id="motto" class="clearfix">
 		<div class="grid_16 clearfix">
@@ -31,27 +46,33 @@
 		</div>
 	</div>
 
-	<div id="content" class="clearfix">
-		<div class="grid_4" id="asite">
+	<div class="clearfix" id="asite">
+		<div class="grid_4">
 			<h3>Kategorie</h3>
 			<?php if (count($categories)):?>
 			<ul class="categories">
 				<?php foreach($categories as $category): ?>
-				<li><a href="?category=<?php print $category['id']?>"><?php print $category['name']?></a></li>
+				<li class="<?php print ($activeId == $category['id']) ? 'active' : '' ?>">
+					<a href="?action=products&id=<?php print $category['id']?>"><?php print $category['name']?></a></li>
 				<?php endforeach; ?>
 			</ul>
 			<?php endif;?>
 		</div>
 		<div class="grid_12">
-			<?php if (count($categories)):?>
-			<ul class="products">
-				<?php foreach($products as $product): ?>
-				<li>
-					<a href="<?php print $product['path'] . '/' . $product['id']?>" rel="lightbox"><img src="<?php print $product['path'] . '/medium/' . $product['id']?>"/></a>
-					<span><?php print $product['name']?></span></li>
-				<?php endforeach; ?>
-			</ul>
-			<?php endif;?>
+			<div id="main" class="clearfix">
+				<?php if (count($categories)):?>
+				<ul class="products">
+					<?php foreach($products as $product): ?>
+					<li>
+						<a rel="lightbox" 
+							title="<?php print $product['name']?>" 
+							href="<?php print $product['path'] . '/' . $product['id']?>">
+								<img src="<?php print $product['path'] . '/medium/' . $product['id']?>" alt="<?php print $product['name']?>" /></a>
+						<span><?php print $product['name']?></span></li>
+					<?php endforeach; ?>
+				</ul>
+				<?php endif;?>
+			</div>
 		</div>
 	</div>
 

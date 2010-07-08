@@ -1,11 +1,20 @@
+<?php
+	$id = @$_GET['id'];
+	$action = @$_GET['action'];
+?>
 <div id="head" class="clearfix">
-	<h1 class="logo"><a href="index.html">KRAK <em>PLAST</em> <span>Jacek Zawada</span></a></h1>
+	<h1 class="logo"><a href="index.php">KRAK <em>PLAST</em> <span>Jacek Zawada</span></a></h1>
 
 	<ul class="navigation">
-		<li class="active"><a href="index.html"><span>Strona główna</span></a></li>
-		<li><a href="oferta.html"><span>Oferta</span></a></li>
-		<li><a href="realizacje.html"><span>Realizacje</span></a></li>
-		<li><a href="zapytanie-ofertowe.html"><span>Zapytanie ofertowe </span></a></li>
-		<li><a href="kontakt.html"><span>Kontakt</span></a></li>
+		<li class="<?php print ($action == 'home') ? 'active' : ''?>">
+			<a href="index.php"><span>Strona główna</span></a></li>
+		<li class="<?php print ($action == 'page' && $id == 'oferta') ? 'active' : ''?>">
+			<a href="index.php?id=oferta"><span>Oferta</span></a></li>
+		<li class="<?php print ($action == 'products') ? 'active' : ''?>">
+			<a href="index.php?action=products"><span>Realizacje</span></a></li>
+		<li class="<?php print ($action == 'page' && $id == 'zapytanie-ofertowe') ? 'active' : ''?>">
+			<a href="index.php?id=zapytanie-ofertowe"><span>Zapytanie ofertowe </span></a></li>
+		<li class="<?php print ($action == 'page' && $id == 'kontakt') ? 'active' : ''?>">
+			<a href="index.php?id=kontakt"><span>Kontakt</span></a></li>
 	</ul>
 </div>
