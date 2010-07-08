@@ -110,7 +110,10 @@ a[rel="group"], a.none, a img, a:hover img {background-color:transparent !import
 a.icoMovie {background:transparent url(../img/camcorder-image.png) 0 0 no-repeat; padding-left:20px;}
 a.icoMovie:hover {background-color:#800020;}
 
-p {margin-bottom:0.5em;}
+p {margin-bottom:0.5em; line-height:1.5em;}
+
+strong {font-family: 'Josefin Sans Std Light', arial, serif;}
+p strong {font-size:1.2em; margin:1em auto;}
 
 h1,h2,h3,h4 {
 	text-shadow:0 1px 0 #000;
