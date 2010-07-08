@@ -1,6 +1,6 @@
 <?php
 	$id = isset($_GET['id']) ? $_GET['id'] : 'index';
-	$action = isset($_GET['action']) ? $_GET['action'] : 'page';
+	$action = isset($_GET['action']) ? $_GET['action'] : 'home';
 ?>
 <div id="head" class="clearfix">
 	<h1 class="logo"><a href="index.php">KRAK <em>PLAST</em> <span>Jacek Zawada</span></a></h1>
