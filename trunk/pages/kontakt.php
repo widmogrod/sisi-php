@@ -11,7 +11,7 @@
 
 <div id="content" class="clearfix">
 	<div class="grid_16 clearfix">
-		<p>W krótce...</p>
+		<p>Wkrótce...</p>
 	</div>
 </div>
 

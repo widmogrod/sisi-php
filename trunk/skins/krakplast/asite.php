@@ -72,6 +72,8 @@
 						<span><?php print $product['name']?></span></li>
 					<?php endforeach; ?>
 				</ul>
+				<?php else:?>
+				<p>Wkrótce...</p>
 				<?php endif;?>
 			</div>
 		</div>
