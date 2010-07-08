@@ -10,9 +10,7 @@
 </div>
 
 <div id="content" class="clearfix">
-	<div class="grid_16 clearfix">
-		<?php print img_skin('img/oferta.png','Oferta', 'front right')?>
-		
+	<div class="grid_5 clearfix">
 		<h3>Wyroby ze stali:</h3>
 		<ul>
 			<li>bramy kute;</li>
@@ -28,7 +26,8 @@
 			<li>stojaki;</li>
 			<li>elementy kute.</li>
 		</ul>
-		
+	</div>
+	<div class="grid_5 clearfix">
 		<h3>Wyroby z kamienia:</h3>
 		<ul>
 			<li>posadzki;</li>
@@ -44,5 +43,7 @@
 		<p>Parapety z PCV oraz aluminium.</p>
 		<p>Dostawa oraz montaż.</p>		
 	</div>
+	<div class="grid_6 clearfix">
+		<?php print img_skin('img/oferta.png','Oferta', 'front')?>
+	</div>
 </div>
-

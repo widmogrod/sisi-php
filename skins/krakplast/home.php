@@ -26,7 +26,7 @@
 		<div class="grid_16 clearfix">
 			<div class="see-more">
 				<h3>Nasze produkty to...</h3>
-				<a class="smore  more red" href="oferta.html" >Zobacz więcej &raquo;</a>
+				<a class="smore  more red" href="index.php?action=page&id=oferta" >Zobacz więcej &raquo;</a>
 			</div>
 			
 			
@@ -50,8 +50,8 @@
 	<div id="abstract" class="grid_16 clearfix small">
 		<div class="grid_5 alpha">
 			<div class="see-more">
-				<h2><a href="wyroby-ze-stali.html" >Wyroby ze stali <em>...szlachetnego metalu, eleganckiego i trwałego.</em></a></h2>
-				<a class="smore" href="wyroby-ze-stali.html" >zobacz więcej &raquo;</a>
+				<h2><a href="index.php?action=page&id=oferta" >Wyroby ze stali <em>...szlachetnego metalu, eleganckiego i trwałego.</em></a></h2>
+				<a class="smore" href="index.php?action=page&id=oferta" >zobacz więcej &raquo;</a>
 			</div>
 			
 			<ul>
@@ -71,8 +71,8 @@
 		</div>
 		<div class="grid_5">
 			<div class="see-more">
-				<h2><a href="wyroby-z-kamienia.html" >Wyroby z kamienia <em>...wysokiej klasy i jakości.</em></a></h2>
-				<a class="smore" href="wyroby-z-kamienia.html" >zobacz więcej &raquo;</a>
+				<h2><a href="index.php?action=page&id=oferta" >Wyroby z kamienia <em>...wysokiej klasy i jakości.</em></a></h2>
+				<a class="smore" href="index.php?action=page&id=oferta" >zobacz więcej &raquo;</a>
 			</div>
 			<ul>
 				<li>posadzki;</li>
@@ -84,8 +84,8 @@
 		</div>
 		<div class="grid_6 omega">
 			<div class="see-more">
-				<h2><a href="automatyka-do-bram.html" >Automatyka do bram <em>... magicznie i wygodnie.</em></a></h2>
-				<a class="smore " href="automatyka-do-bram.html" >zobacz więcej &raquo;</a>
+				<h2><a href="index.php?action=page&id=oferta" >Automatyka do bram <em>... magicznie i wygodnie.</em></a></h2>
+				<a class="smore " href="index.php?action=page&id=oferta" >zobacz więcej &raquo;</a>
 			</div>
 			<ul>
 				<li>automatyka do bram przesuwnych;</li>

@@ -32,7 +32,8 @@ try {
     $image->display();
 
     // save
-    $write = new KontorX_File_Write($options);
+    require_once 'KontorX/File/Write.php';
+    $write = new KontorX_File_Write($images);
     $write->setBasedir($basePath);
     $write->write($fileWrite, $image->toString());
 } catch (Exception $e) {
