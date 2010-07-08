@@ -67,7 +67,7 @@
 					<li>
 						<a rel="lightbox" 
 							title="<?php print $product['name']?>" 
-							href="<?php print $product['path'] . '/' . $product['id']?>">
+							href="<?php print $product['path'] . '/preview/' . $product['id']?>">
 								<img src="<?php print $product['path'] . '/medium/' . $product['id']?>" alt="<?php print $product['name']?>" /></a>
 						<span><?php print $product['name']?></span></li>
 					<?php endforeach; ?>
