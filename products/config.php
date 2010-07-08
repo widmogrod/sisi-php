@@ -1,5 +1,7 @@
 <?php
 return array(
-	'chlodnicki' => 'A',
-	'cwiru' => 'B'
+	'groups' => array(
+		'chlodnicki' => 'A',
+		'cwiru' => 'B'
+	)
 );

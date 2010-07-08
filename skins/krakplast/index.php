@@ -18,7 +18,10 @@
 				<h2>O nas...</h2>
 				<a class="smore more red" href="oferta.html" >Skontaktuj się z nami &raquo;</a>
 			</div>
-			
+			<?php
+				var_dump($this->getMessages());
+				var_dump($this->getData());
+			?>
 			<p class="display">Oferujemy najwyższej jakości wyroby ze stali, kamienia <br/>oraz wysokiej klasy automatykę do bram <br/><br/>
 		</div>
 	</div>
@@ -107,11 +110,11 @@
 				</ul>
 			</div>
 		</div>
-	
-		<?php
-			print partial('body_foot');
-		?>	
 	</div>
+
+	<?php
+		print partial('body_foot');
+	?>	
 </div>
 
 <?php print js_skin('js/global.js')?>

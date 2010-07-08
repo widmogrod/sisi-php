@@ -6,7 +6,7 @@ require_once "KontorX/Sisi.php";
 $sisi = new KontorX_Sisi();
 
 // domyslna konfiguracja
-$sisi->setAction('Page');
+$sisi->setAction('Products');
 $sisi->setResponse('Html');
 
 $sisi->setOptions($_GET);                
