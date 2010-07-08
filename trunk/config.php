@@ -9,13 +9,9 @@ defined('APP_PATHNAME') or define('APP_PATHNAME', dirname(__FILE__));
 // Główny katalog z bibliotekami - ścieżka absolutna
 defined('LIB_PATHNAME') or define('LIB_PATHNAME', APP_PATHNAME . '/library');
 
-// Nazwa katalogu galerii (ścieżka relatywna do głównego katalogu aplikacji) 
-// jest sprzężona z .htaccess dlatego wszelkie zmiany,
-// musza być również w tym pliku uwzględnione!
-defined('GALLERY_PATH') or define('GALLERY_PATH', 'galleries');
-
-// Główny katalog z galeriami - ścieżka absolutna
-defined('GALLERY_PATHNAME') or define('GALLERY_PATHNAME', APP_PATHNAME . '/' . GALLERY_PATH);
+/*
+	Zasoby, img.css
+*/
 
 // Katalog z zasobami (css,js,img,...) - ścieżka relatywna do głównego katalogu aplikacji
 defined('RESOURCES_PATH') or define('RESOURCES_PATH', 'resources');
@@ -32,6 +28,28 @@ defined('SKIN_PATHNAME') or define('SKIN_PATHNAME', APP_PATHNAME . '/'. SKIN_PAT
 
 // Nazwa skórki galerii
 defined('SKIN_NAME') or define('SKIN_NAME', 'krakplast');
+
+
+/*
+	Galeria
+*/
+
+// Nazwa katalogu galerii (ścieżka relatywna do głównego katalogu aplikacji) 
+// jest sprzężona z .htaccess dlatego wszelkie zmiany,
+// musza być również w tym pliku uwzględnione!
+defined('GALLERY_PATH') or define('GALLERY_PATH', 'galleries');
+
+// Główny katalog z galeriami - ścieżka absolutna
+defined('GALLERY_PATHNAME') or define('GALLERY_PATHNAME', APP_PATHNAME . '/' . GALLERY_PATH);
+
+
+/*
+	Produkty
+*/
+
+defined('PRODUCTS_PATH') or define('PRODUCTS_PATH', 'products');
+
+defined('PRODUCTS_PATHNAME') or define('PRODUCTS_PATHNAME', APP_PATHNAME . '/' . PRODUCTS_PATH);
 
 
 /*

@@ -16,7 +16,7 @@ $type = basename(@$_GET['type']);
 $file = basename(@$_GET['file']);
 
 // Prepare
-$basePath = GALLERY_PATHNAME . '/' . trim($path, '/') . '/';
+$basePath = dirname(__FILE__) . '/' . trim($path, '/') . '/';
 $filePath = $basePath . $file;
 $fileWrite = $type . '/' . $file;
 

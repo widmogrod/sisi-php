@@ -299,3 +299,32 @@ a.icoMovie:hover {background-color:#800020;}
 
 .messages {margin:0;}
 .messages li {margin:0 0 5px 0; padding: 5px; list-style:none; border:2px solid #800020; background-color:#ff8973; color: #fff;}
+
+.categories,
+.products {margin:0; padding:0}
+
+.categories {}
+.categories li {list-style:none; padding:0;}
+.categories li a {
+	padding:3px 7px;
+	display:block;
+
+     -moz-border-radius: 5px; /* FF1+ */
+  -webkit-border-radius: 5px; /* Saf3+, Chrome */
+          border-radius: 5px; /* Opera 10.5, IE 9 */
+}
+.products {
+	overflow:hidden;
+}
+.products li {
+	position:relative;
+	text-align:center;
+	list-style:none;
+	float:left;
+	width:33%;
+	height: 200px;
+}
+.products li a {
+	display:block;
+	margin-top:5px;
+}

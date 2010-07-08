@@ -35,10 +35,13 @@
 
 RewriteEngine On
 
+
+RewriteRule ^realizacje.html$ index.php?action=products [NC,L]
+
 #Srawdz czy plik na serwerze istnieje
 #Jeżeli nie istnieje i jego rozszerzenie to generuj miniaturkę fotografii(jpg|jpeg|gif|png)
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^galleries(.*)\/(.*)\/(.*(jpg|jpeg|gif|png))$ image.php?path=$1&type=$2&&file=$3 [NC,L]
+RewriteRule ^(.*)\/(.*)\/(.*(jpg|jpeg|gif|png))$ image.php?path=$1&type=$2&&file=$3 [NC,L]
 RewriteRule ^(.*)$ $1 [NC,L]
 
 RewriteCond %{REQUEST_FILENAME} -s [OR]
