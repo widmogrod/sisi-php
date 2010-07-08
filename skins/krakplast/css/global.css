@@ -283,6 +283,7 @@ img.img {
         border:1px solid #333;
         padding: 5px;
         margin: 0 10px 10px;
+        float:right;
 
   background-color: #373737;
   background-color: rgba(55, 55, 55, 0.6);  /* FF3+, Saf3+, Opera 10.10+, Chrome */
@@ -301,6 +302,7 @@ img.img.right{margin-right:0px;}
 
 .left {float:left};
 .right {float:right};
+
 p.right {text-align:right; float:none;}
 .nofloat {float:none;}
 
