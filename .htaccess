@@ -1,51 +1,7 @@
-# For multiupload flash
-<IfModule mod_security.c>
-        SecFilterEngine Off
-        SecFilterScanPOST Off
-</IfModule>
-
-<IfModule !mod_expires.c>
-        Header unset ETag
-        FileETag MTime Size
-
-#       FileETag None
-#       <FilesMatch ".(ico|flv|jpg|jpeg|png|gif|js|css)$">
-#           Header unset Last-Modified
-#           Header set Expires "Fri, 21 Dec 2012 00:00:00 GMT"
-#           Header set Cache-Control "public, no-transform"
-#       </FilesMatch>
-</IfModule>
-
-<IfModule mod_expires.c>
-    ExpiresActive on
-    <FilesMatch "\.(ico|flv|jpg|jpeg|png|gif)$">
-        ExpiresDefault "access plus 6 months"
-    </FilesMatch>
-    ExpiresByType text/css "access plus 1 year"
-    ExpiresByType text/javascript "access plus 1 year"
-</IfModule>
-
-
-<IfModule mod_deflate.c>
-    <FilesMatch ".(js|css|otf|ttf)$">
-        SetOutputFilter DEFLATE
-    </FilesMatch>
-    #AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/x-javascript application/javascript
-</IfModule>
-
 RewriteEngine On
-
-
-RewriteRule ^realizacje.html$ index.php?action=products [NC,L]
 
 #Srawdz czy plik na serwerze istnieje
 #Jeżeli nie istnieje i jego rozszerzenie to generuj miniaturkę fotografii(jpg|jpeg|gif|png)
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^(.*)\/(.*)\/(.*(jpg|jpeg|gif|png))$ image.php?path=$1&type=$2&&file=$3 [NC,L]
 RewriteRule ^(.*)$ $1 [NC,L]
-
-RewriteCond %{REQUEST_FILENAME} -s [OR]
-RewriteCond %{REQUEST_FILENAME} -l [OR]
-RewriteCond %{REQUEST_FILENAME} -d 
-RewriteRule ^.*$ - [NC,L]
-RewriteRule ^.*$ index.php [NC,L]
