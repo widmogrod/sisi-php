@@ -5,13 +5,13 @@
 			<a class="smore more red" href="index.php?action=products" >&laquo; Zobacz nasze realizacje</a>
 		</div>
 		
-		<p class="display">Zapraszamy do kontaktu telefonicznego!</p>
+		<p class="display">Zapraszamy do kontaktu telefonicznego: <br/>+48 123 123 123</p>
 	</div>
 </div>
 
 <div id="content" class="clearfix">
 	<div class="grid_16 clearfix">
-		<p>Wkrótce...</p>
+	<p>Zaufanie jakim obdarza nas coraz szersze grono klientów jest naszym największym sukcesem!</p>
 	</div>
 </div>
 
