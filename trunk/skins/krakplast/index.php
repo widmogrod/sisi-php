@@ -19,8 +19,8 @@
 				<a class="smore more red" href="oferta.html" >Skontaktuj się z nami &raquo;</a>
 			</div>
 			<?php
-				var_dump($this->getMessages());
-				var_dump($this->getData());
+				$data = $this->getData();
+				$page = $data['page'];
 			?>
 			<p class="display">Oferujemy najwyższej jakości wyroby ze stali, kamienia <br/>oraz wysokiej klasy automatykę do bram <br/><br/>
 		</div>
@@ -28,6 +28,9 @@
 
 	<div id="content" class="clearfix">
 		<div class="grid_16 clearfix">
+			<?php
+				print $page;
+			?>
 			<div class="see-more">
 				<h3>Nasze produkty to...</h3>
 				<a class="smore  more red" href="oferta.html" >Zobacz więcej &raquo;</a>
