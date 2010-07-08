@@ -1,6 +1,7 @@
 <?php
 /**
  * @param string $name
+ * @return string
  */
 function partial($name)
 {
@@ -18,6 +19,7 @@ function partial($name)
 
 /**
  * @param string $name
+ * @return string
  */
 function resource_path($name)
 {
@@ -27,6 +29,7 @@ function resource_path($name)
 
 /**
  * @param string $name
+ * @return string
  */
 function css_resource($name)
 {
@@ -37,6 +40,7 @@ function css_resource($name)
 
 /**
  * @param string $name
+ * @return string
  */
 function js_resource($name)
 {
@@ -49,6 +53,7 @@ function js_resource($name)
 
 /**
  * @param string $name
+ * @return string
  */
 function skin_resource_path($name)
 {
@@ -58,6 +63,7 @@ function skin_resource_path($name)
 
 /**
  * @param string $name
+ * @return string
  */
 function css_skin($name)
 {
@@ -68,6 +74,7 @@ function css_skin($name)
 
 /**
  * @param string $name
+ * @return string
  */
 function js_skin($name)
 {
@@ -78,11 +85,14 @@ function js_skin($name)
 
 /**
  * @param string $src
+ * @param string $src
+ * @param string $src
+ * @return string
  */
-function img_skin($src, $alt = null)
+function img_skin($src, $alt = null, $class = null)
 {
 	$path = skin_resource_path($src);
-	$path = sprintf('<img src="%s" alt="%s"></script>', $path, $alt);
+	$path = sprintf('<img src="%s" alt="%s" class="%s"></script>', $path, $alt, $class);
 	return $path;
 }
 

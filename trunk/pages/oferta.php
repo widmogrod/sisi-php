@@ -11,7 +11,9 @@
 
 <div id="content" class="clearfix">
 	<div class="grid_16 clearfix">
-		<p>Wyroby ze stali:</p>
+		<?php print img_skin('img/oferta.png','Oferta', 'front right')?>
+		
+		<h3>Wyroby ze stali:</h3>
 		<ul>
 			<li>bramy kute;</li>
 			<li>bramy przesuwne;</li>
@@ -26,14 +28,15 @@
 			<li>stojaki;</li>
 			<li>elementy kute.</li>
 		</ul>
-		<p>Wyroby z kamienia:</p>
+		
+		<h3>Wyroby z kamienia:</h3>
 		<ul>
 			<li>posadzki;</li>
 			<li>schody;</li>
 			<li>blaty kuchenne;</li>
 			<li>parapety;</li>
 		</ul>
-		<p>Automatyka do bram:</p>
+		<h3>Automatyka do bram:</h3>
 		<ul>
 			<li>automatyka do bram przesuwnych;</li>
 			<li>automatyka do bram skrzydłowych.</li>
