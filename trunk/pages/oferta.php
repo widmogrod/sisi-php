@@ -12,7 +12,7 @@
 <div id="content" class="clearfix">
 	<div class="grid_10 alpha omega">
 		
-		<div class="grid_10">
+		<div class="grid_10 clearfix">
 			<p>Firma powstała z myślą o dostarczeniu klientom produktów najwyższej <strong>jakości dla najbardziej wymagających.</strong></p>
 			<p><strong>Główną działalnością firmy jest metoloplastyka.</strong> </p>
 			<p>Wykonujemy bramy kute, ogrodzenia, balustrady, meble, lampy oraz elementy kute wykorzystywane we wzornictwie. W swojej ofercie posiadamy również szeroki wachlarz wyrobów z marmuru, aglomarmuru oraz granitu. Kamień naturalny jest eleganckim materiałem do wykańczania wnętrz, jego główne zalety, jak trwałość, łatwość utrzymania w czystości, estetyka sprawiły, że zyskuje coraz większą przychylność klientów. Urzeczywistniamy Państwa pomysły, aby mogły ujrzeć światło dzienne oraz zdobić Państwa otoczenie.  </p>
@@ -21,7 +21,7 @@
 			<p>Zapraszamy do zapoznania się z naszą ofertą:</p>
 		</div>
 		
-		<div class="grid_5 clearfix">
+		<div class="grid_5">
 			<h3>Wyroby ze stali:</h3>
 			<ul>
 				<li>bramy kute;</li>
@@ -38,7 +38,7 @@
 				<li>elementy kute.</li>
 			</ul>
 		</div>
-		<div class="grid_5 clearfix">
+		<div class="grid_4">
 			<h3>Wyroby z kamienia:</h3>
 			<ul>
 				<li>posadzki;</li>
@@ -51,6 +51,9 @@
 				<li>automatyka do bram przesuwnych;</li>
 				<li>automatyka do bram skrzydłowych.</li>
 			</ul>
+		</div>
+		
+		<div class="grid_10 clearfix">
 			<p>Parapety z PCV oraz aluminium.</p>
 			<p>Dostawa oraz montaż.</p>		
 		</div>

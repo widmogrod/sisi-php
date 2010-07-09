@@ -11,7 +11,7 @@
 
 <div id="content" class="clearfix">
 	<div class="grid_16 clearfix">
-	<p>Zaufanie jakim obdarza nas coraz szersze grono klientów jest naszym największym sukcesem!</p>
+	<p style="text-align:center">Zaufanie jakim obdarza nas coraz szersze grono klientów jest naszym największym sukcesem!</p>
 	</div>
 </div>
 
