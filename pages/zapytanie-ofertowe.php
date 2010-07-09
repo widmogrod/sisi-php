@@ -12,21 +12,7 @@
 <div id="content" class="clearfix">
 	<div class="grid_16 clearfix">
 		<div class="grid_5 clearfix">
-			<h3></h3>
-			<ul>
-				<li>bramy kute;</li>
-				<li>bramy przesuwne;</li>
-				<li>furtki;</li>
-				<li>ogrodzenia kute;</li>
-				<li>balustrady wewnętrzne;</li>
-				<li>balustrady zewnętrzne;</li>
-				<li>kraty;</li>
-				<li>meble kute;</li>
-				<li>lampy;</li>
-				<li>świeczniki;</li>
-				<li>stojaki;</li>
-				<li>elementy kute.</li>
-			</ul>
+			Wkrótce...
 		</div>
 	</div>
 </div>
