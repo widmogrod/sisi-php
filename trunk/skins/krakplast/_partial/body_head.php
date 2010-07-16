@@ -3,13 +3,16 @@
 	$action = isset($_GET['action']) ? $_GET['action'] : 'home';
 ?>
 <div id="head" class="clearfix">
-	<h1 class="logo"><a href="index.php">KRAK <em>PLAST</em> <span>Jacek Zawada</span></a></h1>
+	<h1 class="logo"><a href="index.php">KRAK<em>PLAST</em> <span>Jacek Zawada</span></a></h1>
 
 	<ul class="navigation">
 		<li class="<?php print ($action == 'home') ? 'active' : ''?>">
 			<a href="index.php"><span>Strona główna</span></a></li>
-		<li class="<?php print ($action == 'page' && $id == 'oferta') ? 'active' : ''?>">
-			<a href="index.php?action=page&id=oferta"><span>Oferta</span></a></li>
+			
+		<li class="<?php print ($action == 'page' && $id == 'o-nas') ? 'active' : ''?>">
+			<a href="index.php?action=page&id=o-nas"><span>O nas</span></a></li>
+		<li class="<?php print ($action == 'page' && strstr($id,'oferta')) ? 'active' : ''?>">
+			<a href="index.php?action=page&id=oferta-wyroby-ze-stali"><span>Oferta</span></a></li>
 		<li class="<?php print ($action == 'products') ? 'active' : ''?>">
 			<a href="index.php?action=products"><span>Realizacje</span></a></li>
 		<li class="<?php print ($action == 'page' && $id == 'zapytanie-ofertowe') ? 'active' : ''?>">
