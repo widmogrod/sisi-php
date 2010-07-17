@@ -13,7 +13,11 @@ $_GET = array_map('urldecode', (array) $_GET);
 
 $path = str_replace('..', '', @$_GET['path']);
 $type = basename(@$_GET['type']);
-$file = basename(@$_GET['file']);
+
+// problem z polskimi znakami... np. "Ł" jest zamieniane na "a"
+// dlatego takie rozwiązanie a nie basename!
+// $file = basename(@$_GET['file']);
+$file = end(explode('/',@$_GET['file']));
 
 // Prepare
 $basePath = dirname(__FILE__) . '/' . trim($path, '/') . '/';

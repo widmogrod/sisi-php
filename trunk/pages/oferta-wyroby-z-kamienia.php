@@ -39,9 +39,12 @@
 	<h3>W naszych projektach wykorzystujemy następujące materiały:</h3>
 	
 	<h4>Aglomarmur</h4>
+	<?php print gallery_images_for_lightbox('Aglomarmur'); ?>
 	
 	<h4>Granit</h4>
+	<?php print gallery_images_for_lightbox('Granit'); ?>
 	
 	<h4>Marmur</h4>
+	<?php print gallery_images_for_lightbox('Marmur'); ?>
 	
 </div>

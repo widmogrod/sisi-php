@@ -459,3 +459,42 @@ p.right {text-align:right; float:none;}
 }
 
 #tab-content ul {margin-top:20px; margin-left:20px;}
+
+.gallery_images_for_lightbox {
+	overflow:hidden;
+	clear:both;
+	maring: 10px auto;
+}
+.gallery_images_for_lightbox .image {
+	display:block;
+	float:left;
+	margin-left:5px;
+	margin-bottom:5px;
+}
+.gallery_images_for_lightbox .image a {
+	display:block;
+	width:100%;
+	height:100%;
+	position:relative;
+}
+.gallery_images_for_lightbox .image a span {
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+	padding: 3px;
+	font-size:12px;
+	height: 25%;
+	line-height: 1em;
+}
+.gallery_images_for_lightbox .image a span {
+  background-color: #161616;
+  background-color: rgba(22, 22, 22, 0.6);  /* FF3+, Saf3+, Opera 10.10+, Chrome */
+            filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='#99161616',EndColorStr='#99161616'); /* IE6,IE7 */
+        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#99161616',EndColorStr='#99161616')"; /* IE8 */
+}
+
+.gallery_images_for_lightbox .thumb-thumb {
+	width:90px;
+	height:90px;
+}
