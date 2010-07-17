@@ -61,7 +61,7 @@
 		</div>
 		<div class="grid_12">
 			<div id="main" class="clearfix">
-				<?php if (count($categories)):?>
+				<?php if (count($products)):?>
 				<ul class="products">
 					<?php foreach($products as $product): ?>
 					<li>

@@ -109,9 +109,12 @@ class Products
 			
 			$pattern = $this->_getGlobPattern(self::GLOB_CATEGORIES);
 			foreach(glob($pattern, GLOB_ONLYDIR) as $dir) {
-				$name = basename($dir);
-				$groupName = basename(dirname($dir));
+				// problem z polskimi znakami... np. "Ł" jest zamieniane na "a"
+				// dlatego takie rozwiązanie a nie basename!
+				// $name = basename($dir);
+				$name = end(explode('/',$dir));
 
+				$groupName = basename(dirname($dir));
 				
 				if (!isset($this->_categories[$name])) {
 					$category = array(
