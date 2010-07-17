@@ -46,13 +46,13 @@
 					
 				<li><a href="index.php?action=products&id=Kominek">
 					<?php print img_skin('img/wyroby-z-kamienia-kominek.jpg','Kominek - wyroby z kamienia')?>
-					<span>Kominek</span></a></li>
+					<span>Kominki</span></a></li>
 				<li><a href="index.php?action=products&id=Łazienka">
 					<?php print img_skin('img/wyroby-z-kamienia-lazienka.jpg','Łazienka - wyroby z kamienia')?>
-					<span>Łazienka</span></a></li>
+					<span>Łazienki</span></a></li>
 				<li><a href="index.php?action=products&id=Kuchnia">
 					<?php print img_skin('img/wyroby-z-kamienia-kuchnia.jpg','Kuchnia - wyroby z kamienia')?>
-					<span>Kuchnia</span></a></li>
+					<span>Kuchnie</span></a></li>
 				<li><a href="index.php?action=products&id=Schody">
 					<?php print img_skin('img/wyroby-z-kamienia-schody.jpg','Schody - wyroby z kamienia')?>
 					<span>Schody</span></a></li>
