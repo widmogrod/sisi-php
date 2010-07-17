@@ -92,8 +92,49 @@ function js_skin($name)
 function img_skin($src, $alt = null, $class = null)
 {
 	$path = skin_resource_path($src);
-	$path = sprintf('<img src="%s" alt="%s" class="%s"></script>', $path, $alt, $class);
+	$path = sprintf('<img src="%s" alt="%s" class="%s"/>', $path, $alt, $class);
 	return $path;
+}
+
+/**
+ * @param string $galleryId
+ * @param string $thumbStyle
+ * @return string
+ */
+function gallery_images_for_lightbox($galleryId, $thumbStyle = null)
+{
+	if (!class_exists('Galleries', false))
+		require_once 'Galleries.php';
+
+	$images = Galleries::getInstance()->getImages($galleryId);
+	if (!is_array($images))
+		return '';
+
+	if (null === $thumbStyle)
+		$thumbStyle = 'thumb';
+
+	$thumbStyle = basename($thumbStyle);
+
+	$result = array();
+	
+	foreach($images as $image)
+	{
+		$id   = $image['id'];
+		$name = $image['name'];
+
+#		$imagePath = $image['path'];		
+		$imagePath = $image['relativePath'] . '/preview/' . $id;
+		$thumbPath = $image['relativePath'] . '/' . $thumbStyle . '/' . $id;
+		
+		$line = sprintf('<a href="%s" rel="lightbox"><span>%s</span></a>', $imagePath, $name);
+		$line = sprintf('<div style="background-image: url(%s)" class="image thumb-%s" >%s</div>', $thumbPath, $thumbStyle, $line);
+
+		$result[] = $line;
+	}
+	
+	$result = implode($result);
+	$result = sprintf('<div class="gallery_images_for_lightbox gallery-%s">%s</div>', $galleryId, $result);
+	return $result;
 }
 
 

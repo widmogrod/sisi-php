@@ -3,25 +3,7 @@
 <head>
 <?php
 	print partial('html_head');
-	
-	// FancyBox
-	print js_resource('js/jquery-1.4.2.min.js');
-	print js_resource('js/fancybox/jquery.mousewheel-3.0.2.pack.js');
-	print js_resource('js/fancybox/jquery.fancybox-1.3.1.js');
-	print css_resource('js/fancybox/jquery.fancybox-1.3.1.css');
 ?>
-<script type="text/javascript">
-	$(document).ready(function() {
-		$("a[rel=lightbox]").fancybox({
-			'transitionIn'		: 'none',
-			'transitionOut'		: 'none',
-			'titlePosition' 	: 'over',
-			'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
-				return '<span id="fancybox-title-over">Zdjęcie produktu ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
-			}
-		});
-	});
-</script>
 </head>
 <body class="index">
 <div class="container_16 clearfix">

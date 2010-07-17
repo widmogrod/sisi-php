@@ -159,8 +159,11 @@ class Products
 		$config = $this->getConfig();
 		$groups = $config['groups'];
 		
-		foreach(glob($categoryDir . '/'. self::GLOB_PRODUCTS, GLOB_BRACE) as $file) {
-			$id = basename($file);
+		foreach(glob($categoryDir . '/'. self::GLOB_PRODUCTS, GLOB_BRACE) as $file) 
+		{
+			// problem z polskimi znakami... np. "Ł" jest zamieniane na "a"
+			// dlatego takie rozwiązanie a nie basename!
+			$id = end(explode('/',$file));
 			
 			// usunięcie rozszeżenia
 			$name = explode('.', $id);
@@ -169,7 +172,8 @@ class Products
 			
 			$info[] = array(
 				'id' => $id,
-				'name' => $groups[$groupName] . $name,
+#				'name' => $groups[$groupName] . $name,
+				'name' => $name,
 				'path' => PRODUCTS_PATH . '/' . $this->_relativePath(dirname($file)) // sciezka do pliku
 			);
 		}
