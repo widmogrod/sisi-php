@@ -126,7 +126,7 @@ function gallery_images_for_lightbox($galleryId, $thumbStyle = null)
 		$imagePath = $image['relativePath'] . '/preview/' . $id;
 		$thumbPath = $image['relativePath'] . '/' . $thumbStyle . '/' . $id;
 		
-		$line = sprintf('<a href="%s" rel="lightbox"><span>%s</span></a>', $imagePath, $name);
+		$line = sprintf('<a href="%s" rel="lightbox" title="%s"><span>%s</span></a>', $imagePath, $name, $name);
 		$line = sprintf('<div style="background-image: url(%s)" class="image thumb-%s" >%s</div>', $thumbPath, $thumbStyle, $line);
 
 		$result[] = $line;

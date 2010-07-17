@@ -15,10 +15,7 @@
 		$("a[rel=lightbox]").fancybox({
 			'transitionIn'		: 'none',
 			'transitionOut'		: 'none',
-			'titlePosition' 	: 'over',
-			'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
-				return '<span id="fancybox-title-over">Zdjęcie produktu ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
-			}
+			'titlePosition' 	: 'over'
 		});
 	});
 </script>
