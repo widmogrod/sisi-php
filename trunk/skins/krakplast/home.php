@@ -50,8 +50,8 @@
 	<div id="abstract" class="grid_16 clearfix small">
 		<div class="grid_5 alpha">
 			<div class="see-more">
-				<h2><a href="index.php?action=page&id=oferta" >Wyroby ze stali <em>...kute, cynkowane, malowane proszkowo.</em></a></h2>
-				<a class="smore" href="index.php?action=page&id=oferta" >zobacz więcej &raquo;</a>
+				<h2><a href="index.php?action=page&id=oferta-wyroby-ze-stali" >Wyroby ze stali <em>...kute, cynkowane, malowane proszkowo.</em></a></h2>
+				<a class="smore" href="index.php?action=page&id=oferta-wyroby-ze-stali" >zobacz więcej &raquo;</a>
 			</div>
 			
 			<ul>
@@ -71,8 +71,8 @@
 		</div>
 		<div class="grid_5">
 			<div class="see-more">
-				<h2><a href="index.php?action=page&id=oferta" >Wyroby z kamienia <em>...wysokiej klasy i jakości.</em></a></h2>
-				<a class="smore" href="index.php?action=page&id=oferta" >zobacz więcej &raquo;</a>
+				<h2><a href="index.php?action=page&id=oferta-wyroby-z-kamienia" >Wyroby z kamienia <em>...wysokiej klasy i jakości.</em></a></h2>
+				<a class="smore" href="index.php?action=page&id=oferta-wyroby-z-kamienia" >zobacz więcej &raquo;</a>
 			</div>
 			<ul>
 				<li>posadzki;</li>
@@ -84,8 +84,8 @@
 		</div>
 		<div class="grid_6 omega">
 			<div class="see-more">
-				<h2><a href="index.php?action=page&id=oferta" >Automatyka do bram <em>... bezprzewodowo i wygodnie.</em></a></h2>
-				<a class="smore " href="index.php?action=page&id=oferta" >zobacz więcej &raquo;</a>
+				<h2><a href="index.php?action=page&id=oferta-automatyka" >Automatyka do bram <em>... bezprzewodowo i wygodnie.</em></a></h2>
+				<a class="smore " href="index.php?action=page&id=oferta-automatyka" >zobacz więcej &raquo;</a>
 			</div>
 			<ul>
 				<li>automatyka do bram przesuwnych;</li>
