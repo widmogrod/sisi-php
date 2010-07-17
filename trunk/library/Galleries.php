@@ -100,7 +100,10 @@ class Galleries
 			
 			$pattern = $this->_getGlobPattern(self::GLOB_GALLERIES);
 			foreach(glob($pattern, GLOB_ONLYDIR) as $dir) {
-				$name = basename($dir);
+				// problem z polskimi znakami... np. "Ł" jest zamieniane na "a"
+				// dlatego takie rozwiązanie a nie basename!
+				// $name = basename($dir);
+				$name = end(explode('/',$dir));
 				
 				if (!isset($this->_galleries[$name])) {
 					$gallery = array(

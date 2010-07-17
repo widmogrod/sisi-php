@@ -43,6 +43,29 @@
 				<li><a href="index.php?action=products&id=Kraty">
 					<?php print img_skin('img/kraty.jpg','Kraty')?>
 					<span>Kraty</span></a></li>
+					
+				<li><a href="index.php?action=products&id=Kominek">
+					<?php print img_skin('img/wyroby-z-kamienia-kominek.jpg','Kominek - wyroby z kamienia')?>
+					<span>Kominek</span></a></li>
+				<li><a href="index.php?action=products&id=Łazienka">
+					<?php print img_skin('img/wyroby-z-kamienia-lazienka.jpg','Łazienka - wyroby z kamienia')?>
+					<span>Łazienka</span></a></li>
+				<li><a href="index.php?action=products&id=Kuchnia">
+					<?php print img_skin('img/wyroby-z-kamienia-kuchnia.jpg','Kuchnia - wyroby z kamienia')?>
+					<span>Kuchnia</span></a></li>
+				<li><a href="index.php?action=products&id=Schody">
+					<?php print img_skin('img/wyroby-z-kamienia-schody.jpg','Schody - wyroby z kamienia')?>
+					<span>Schody</span></a></li>
+				<li><a href="index.php?action=products&id=Parapet">
+					<?php print img_skin('img/wyroby-z-kamienia-parapety-wewnetrzne.jpg','Parapety wewnętrzne - wyroby z kamienia')?>
+					<span>Parapety wewnętrzne</span></a></li>
+					
+				<li><a href="index.php?action=products&id=Automatyka do bram">
+					<?php print img_skin('img/automatyka-do-bram.jpg','Automatyka do bram')?>
+					<span>Automatyka do bram</span></a></li>
+					
+					
+				
 			</ul>
 		</div>
 	</div>
@@ -92,13 +115,6 @@
 				<li>automatyka do bram skrzydłowych.</li>
 			</ul>
 			
-			<div id="faq">
-				<h3>Najczęściej zadawane pytania</h3>
-				<ul>
-					<li><a href="">Jak wygląda dostawa oraz montaż?</a></li>
-					<li><a href="">Jaki jest czas realizacji?</a></li>
-				</ul>
-			</div>
 		</div>
 	</div>
 
