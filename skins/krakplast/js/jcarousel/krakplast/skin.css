@@ -78,7 +78,7 @@
     width: 32px;
     height: 32px;
     cursor: pointer;
-    background: transparent url(next-arrow.png) no-repeat 0 0;
+    background: transparent url(right-1.png) no-repeat 0 0;
 }
 
 .jcarousel-skin-krakplast .jcarousel-prev-horizontal {
@@ -88,5 +88,5 @@
     width: 32px;
     height: 32px;
     cursor: pointer;
-    background: transparent url(prev-arrow.png) no-repeat 0 0;
+    background: transparent url(left-1.png) no-repeat 0 0;
 }
