@@ -43,7 +43,7 @@
 				<h2>Realizacje ...</h2>
 				<a class="smore more red" href="index.php?action=page&id=kontakt" >Skontaktuj się z nami &raquo;</a>
 			</div>
-			<p class="display">rzeczywistniamy Państwa pomysły, aby mogły ujrzeć światło dzienne oraz zdobić Państwa otoczenie!</p>
+			<p class="display">Urzeczywistniamy Państwa pomysły, aby mogły ujrzeć światło dzienne<br/> oraz zdobić Państwa otoczenie!</p>
 		</div>
 	</div>
 
