@@ -1,3 +1,7 @@
+.success,
+.failure {display:block; padding:10px; background-color:#fff;}
+.success {color:#10af33; border:1px solid #10af33}
+.failure {color:#af2c10; border:1px solid #af2c10}
 /* tutorial */
 
 input, textarea { 
@@ -12,14 +16,14 @@ input, textarea {
 	box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
 	-moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
 	-webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
-	}
+}
 
 textarea { 
 	width: 400px;
 	max-width: 400px;
 	height: 150px;
 	line-height: 150%;
-	}
+}
 
 input:hover, textarea:hover,
 input:focus, textarea:focus { 
@@ -27,10 +31,11 @@ input:focus, textarea:focus {
 	-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
 	}
 
+.form {width:100%;}
 .form label { 
 	margin-left: 10px; 
 	color: #999999; 
-	}
+}
 
 .form p {margin: 10px 0 10px 0}
 
@@ -44,4 +49,6 @@ input:focus, textarea:focus {
 	color: #FFFFFF;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
-	}
+}
+.zend_form {width:700px; margin:0 auto}
+.zend_form dt {margin:5px 0; font-weight:bold}

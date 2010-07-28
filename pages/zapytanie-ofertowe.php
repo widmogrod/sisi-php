@@ -11,7 +11,6 @@
 
 <div id="content" class="clearfix">
 	<div class="grid_16 clearfix">
-		<div class="grid_5 clearfix">
 <?php
 
 require_once 'forms/Contact.php';
@@ -25,15 +24,15 @@ if (!empty($_POST))
 {
 	if ($form->isValid($_POST))
 	{
-		$mail = '<dl>';
+		$content = '<dl>';
 		foreach($form->getElements() as $element)
 		{
 			$label = $element->getLabel();
 			$value = $element->getValue();
 
-			$mail .= sprintf('<dt><b>%s</b></dt><dl>%s</dl>', $label, $value);
+			$content .= sprintf('<dt><b>%s</b></dt><dl>%s</dl>', $label, $value);
 		}
-		$mail .= '</dl>';
+		$content .= '</dl>';
 
 		require_once 'Zend/Mail.php';
 		$mail = new Zend_Mail();
@@ -41,12 +40,13 @@ if (!empty($_POST))
 		$mail->addTo('biuro@krak-plast.pl');
 		$mail->addTo('widmogrod@gmail.com');
 		$mail->setSubject('Formularz zapytaniowy');
-		$mail->setBodyHtml($mail,'UTF-8');
+		$mail->setBodyHtml($content,'UTF-8');
 
 		try {
 			$mail->send();
+			print '<p class="success">Dziękujemy, wiadomość została wysłana.</p>';
 		} catch (Zend_Mail_Exception $e) {
-			print '<p>'.$e->getMessage().'</p>';
+			print '<p class="failure">Przepraszamy, nie udało sie wysłać wiadomości powód: <em>'.$e->getMessage().'</em></p>';
 		}
 	}
 }
@@ -54,7 +54,6 @@ if (!empty($_POST))
 print $form->render();
 
 ?>
-		</div>
 	</div>
 </div>
 
