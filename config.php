@@ -329,7 +329,8 @@ $images = array(
 set_include_path(implode(PATH_SEPARATOR, array(
 	'/usr/share/php/Zend/trunk/',
 	'/usr/share/php/KontorX/trunk/',
-	LIB_PATHNAME
+	LIB_PATHNAME,
+	APP_PATHNAME
 )));
 
 error_reporting(E_ALL);
