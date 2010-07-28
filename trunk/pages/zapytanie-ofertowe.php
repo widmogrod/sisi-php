@@ -27,8 +27,12 @@ if (!empty($_POST))
 		$content = '<dl>';
 		foreach($form->getElements() as $element)
 		{
+			if ($element->getIgnore())
+				continue;
+
 			$label = $element->getLabel();
 			$value = $element->getValue();
+			$value = nl2br($value);
 
 			$content .= sprintf('<dt><b>%s</b></dt><dl>%s</dl>', $label, $value);
 		}
