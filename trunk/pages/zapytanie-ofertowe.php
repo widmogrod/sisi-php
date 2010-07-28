@@ -42,7 +42,6 @@ if (!empty($_POST))
 		$mail = new Zend_Mail();
 		$mail->setFrom('biuro@krak-plast.pl', 'Jacek Zawada');
 		$mail->addTo('biuro@krak-plast.pl');
-		$mail->addTo('widmogrod@gmail.com');
 		$mail->setSubject('Formularz zapytaniowy');
 		$mail->setBodyHtml($content,'UTF-8');
 
