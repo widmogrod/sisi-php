@@ -27,7 +27,7 @@ class Form_Contact extends Zend_Form
 					'strlen' => new Zend_Validate_StringLength(array('min' => 7))
 				)
 			))
-			->addElement('textarea','mail-content', array(
+			->addElement('textarea','mail', array(
 				'label' => '↓ Treść zapytania',
 				'required' => true,
 				'validators' => array(
