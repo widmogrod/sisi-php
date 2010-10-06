@@ -17,7 +17,7 @@
 	<p class="intro">Zapraszamy do działu wszystkich, którzy poszukują mechanizmów renomowanych firm bez względu czy są to urządzenia do użytku indywidualnego czy o przeznaczeniu przemysłowym.</p>	
 	<p class="center"><?php print img_skin('img/automatyka.jpg','Automatyka bram', 'front center')?></p>
 
-	<h3>Oferujemy automatykę odferowanych firm:</h3>
+	<h3>Oferujemy automatykę renomowanych firm:</h3>
 	
 	<table class="center">
 		<tr>
