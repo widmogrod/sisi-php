@@ -1,7 +1,8 @@
-RewriteEngine On
-
-#Srawdz czy plik na serwerze istnieje
-#Jeżeli nie istnieje i jego rozszerzenie to generuj miniaturkę fotografii(jpg|jpeg|gif|png)
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^(.*)\/(.*)\/(.*(jpg|jpeg|gif|png))$ image.php?path=$1&type=$2&&file=$3 [NC,L]
-RewriteRule ^(.*)$ $1 [NC,L]
+# RewriteEngine  On
+# RewriteBase /
+# 
+# #Srawdz czy plik na serwerze istnieje
+# #Jeżeli nie istnieje i jego rozszerzenie to generuj miniaturkę fotografii(jpg|jpeg|gif|png)
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteRule ^(.*)\/(.*)\/(.*(jpg|jpeg|gif|png))$ image.php?path=$1&type=$2&&file=$3 [NC,L]
+# RewriteRule ^(.*)$ $1 [NC,L]

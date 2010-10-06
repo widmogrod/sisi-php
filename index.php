@@ -10,6 +10,4 @@ $sisi->setAction('Home');
 $sisi->setResponse('Html');
 
 $sisi->setOptions($_GET);                
-
 $sisi->handle();
- 
